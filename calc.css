@@ -1,0 +1,55 @@
+ body{
+    
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+    h1{
+        font-family: "Montserrat", sans-serif;
+        margin:0;
+        padding: 20px;
+        text-align: center;
+        text-decoration: underline;
+        text-shadow:2px 2px 5px white; 
+    }
+    .container{
+        width:300px;
+        padding:50px; 
+        border:2px solid black;
+        border-radius:40px; 
+        background-color: rgb(176, 223, 206);
+    } 
+    .CalcRow{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+    .CalcRow button{
+        font-family: "Montserrat", sans-serif;
+        margin:5px;
+        border-radius :200px;
+        font-size: 20px;
+        padding: 15px;
+        flex:1;
+        background-color: rgb(209, 165, 179);    
+        text-shadow:2px 2px 5px grey;
+        font-weight: bolder;
+    }
+    .display{
+       font-family: "Bebas Neue", sans-serif;
+        height:40px;
+        width:90%;
+        text-align:right;
+        font-size: 30px;
+        border-radius:26px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    #btn1 button{
+        background-color: rgb(100, 155, 190);
+        color: whitesmoke;
+    }
+
+    #btn3 button{
+        background-color: rgb(229, 229, 187);
+    }

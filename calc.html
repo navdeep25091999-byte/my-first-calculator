@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/calc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <div class="container">
+        <h1>CALCULATOR</h1>
+        <input type="text" value="0" class="display" readonly id="cal">
+        <div class="CalcRow" id="btn1">
+            
+            <button onclick="fun('%')">%</button>
+            <button onclick="clearDisplay()">CE</button>
+            <button onclick="deleteLast()">C</button>
+            <button onclick="fun('/')">/</button>
+        </div>
+        <div class="CalcRow" > 
+            <button onclick="fun('1/x')">1/x</button>
+            <button onclick="fun('x^2')">x^2</button>
+            <button>&radic;x</button>
+            <button onclick="fun('*')" style="background-color: rgb(229, 229, 187);">*</button>
+        </div>
+        <div class="CalcRow">
+
+            <button onclick="fun(7)">7</button>
+            <button onclick="fun(8)">8</button>
+            <button onclick="fun(9)">9</button>
+            <button style="background-color: rgb(229, 229, 187)" onclick="fun('-')">-</button>
+        </div>
+        <div class="CalcRow">
+            <button onclick="fun(4)">4</button>
+            <button onclick="fun(5)">5</button>
+            <button onclick="fun(6)">6</button>
+            <button style="background-color: rgb(229, 229, 187);" onclick="fun('+')">+</button>
+        </div>
+        <div class="CalcRow">
+            <button onclick="fun(1)">1</button>
+            <button onclick="fun(2)">2</button>
+            <button onclick="fun(3)">3</button>
+            <button style="background-color: rgb(229, 229, 187)" onclick="solve()">=</button>
+        </div>
+        <div class="CalcRow" id="btn3">
+            <button onclick="fun('+/-')">+/-</button>
+            <button onclick="fun(0)">0</button>
+            <button onclick="fun('.')">.</button>
+            <button onclick="fun('00')">00</button>
+        </div>
+
+    </div>
+
+
+    
+</body>
+<script src="../js/calc.js"></script>
+</html>
