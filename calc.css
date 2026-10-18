@@ -1,55 +1,82 @@
- body{
-    
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-    }
-    h1{
-        font-family: "Montserrat", sans-serif;
-        margin:0;
-        padding: 20px;
-        text-align: center;
-        text-decoration: underline;
-        text-shadow:2px 2px 5px white; 
-    }
-    .container{
-        width:300px;
-        padding:50px; 
-        border:2px solid black;
-        border-radius:40px; 
-        background-color: rgb(176, 223, 206);
-    } 
-    .CalcRow{
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-    }
-    .CalcRow button{
-        font-family: "Montserrat", sans-serif;
-        margin:5px;
-        border-radius :200px;
-        font-size: 20px;
-        padding: 15px;
-        flex:1;
-        background-color: rgb(209, 165, 179);    
-        text-shadow:2px 2px 5px grey;
-        font-weight: bolder;
-    }
-    .display{
-       font-family: "Bebas Neue", sans-serif;
-        height:40px;
-        width:90%;
-        text-align:right;
-        font-size: 30px;
-        border-radius:26px;
-        margin-bottom: 15px;
-        padding: 10px;
-    }
-    #btn1 button{
-        background-color: rgb(100, 155, 190);
-        color: whitesmoke;
-    }
 
-    #btn3 button{
-        background-color: rgb(229, 229, 187);
-    }
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(205, 185, 192);
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    text-shadow: 2px 2px 5px white;
+}
+
+.container {
+    width: 300px;
+    padding: 25px;
+    border: 2px solid #555;
+    border-radius: 25px;
+    background-color: #b0dfce;
+    box-shadow: 5px 5px 15px gray;
+}
+.CalcRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CalcRow button {
+    flex: 1;
+    margin: 5px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d1a5b3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.CalcRow button:hover {
+    background-color: #c18499;
+}
+
+/* Button press effect */
+.CalcRow button:active {
+    background-color: brown;
+    color: white;
+}
+
+.display {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 25px;
+    text-align: right;
+}
+
+#btn1 button {
+    background-color: #649bbe;
+    color: white;
+}
+
+#btn1 button:hover {
+    background-color: #477f9f;
+}
+
+#btn3 button {
+    background-color: #e5e5bb;
+}
+```
