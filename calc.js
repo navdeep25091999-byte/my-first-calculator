@@ -3,9 +3,9 @@ function fun(value){
         if(value=="1/x"){
             display.value=1/Number(display.value);
         }else if(value=="x^2"){
-            display.value=1/number**2;
+            display.value=Number(display.value)**2;
         }else if(value=="%"){
-            display.value=number(display.value)/100;
+            display.value=Number(display.value)/100;
         }else if(display.value=='0'){
             display.value=value;
         }else{
